@@ -1,11 +1,11 @@
 <?php
 
 /**
- * Add places and let posts relate to them.
+ * Provided an exhibition content type and related funcionality to display a gallery.
  *
- * Plugin Name: webdsgndotme - Places
+ * Plugin Name: webdsgndotme - Exhibit
  * Plugin URI:  http://webdsgn.me
- * Description: Create places and relate them to posts. Feature them on a fancy custom map.
+ * Description: A Wordpress plugin to create exhibition galleries and venues.
  * Author:  webdsgndotme
  * Author URI: http://webdsgn.me
  * Version: 0.0.1
