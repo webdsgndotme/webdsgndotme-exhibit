@@ -13,10 +13,10 @@
 
 $lib = 'webdsgndotme.inc.php';
 // Let's find our base class on plugins dir first, load it from inc dir otherwise.
-if (file_exists(WP_PLUGIN_DIR . '/' . $lib)) {
-  include_once(WP_PLUGIN_DIR . '/' . $lib);
+if (file_exists (WP_PLUGIN_DIR . '/' . $lib)) {
+  include_once (WP_PLUGIN_DIR . '/' . $lib);
 } else {
-  include_once dirname(__FILE__) . '/inc/' . $lib;
+  include_once dirname (__FILE__) . '/inc/' . $lib;
 }
 
 class webdsgndotme_exhibit extends webdsgndotme_plugin {
@@ -47,7 +47,7 @@ class webdsgndotme_exhibit extends webdsgndotme_plugin {
     // item width/height = cell_size * r + 2 * padding
     $options->padding = 5;
     // 1 ... max_ratio
-    $options->max_ratio = 4;
+    $options->boundary = 4;
 
     update_option($this->domain, $options);
 
@@ -56,6 +56,7 @@ class webdsgndotme_exhibit extends webdsgndotme_plugin {
   }
 
   public function init() {
+    require_once self::plugin_path() . '/inc/forms.inc.php';
     require_once self::plugin_path() . '/post-type.php';
     webdsgndotme_exhibit_content::get()->register();
   }
