@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Provided an exhibition content type and related funcionality to display a gallery.
+ * Provides an exhibition post type and related funcionality to display a gallery.
  *
  * Plugin Name: webdsgndotme - Exhibit
  * Plugin URI:  http://webdsgn.me
