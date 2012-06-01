@@ -56,7 +56,6 @@ class webdsgndotme_exhibit extends webdsgndotme_plugin {
   }
 
   public function init() {
-    require_once self::plugin_path() . '/inc/forms.inc.php';
     require_once self::plugin_path() . '/post-type.php';
     webdsgndotme_exhibit_content::get()->register();
   }
